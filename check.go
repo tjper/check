@@ -18,8 +18,8 @@ type Check struct {
 	ClientMessage string
 }
 
-// NewCheck creates a new Check object checks and reports on errors.
-func NewCheck(options ...func(*Check)) *Check {
+// New creates a new Check object checks and reports on errors.
+func New(options ...func(*Check)) *Check {
 	chk := &Check{
 		Message: "encountered error",
 	}
